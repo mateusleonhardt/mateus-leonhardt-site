@@ -1,0 +1,11 @@
+#contact {
+    background-color: #fff;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 750px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 250px auto;
+    position: relative;
+}
