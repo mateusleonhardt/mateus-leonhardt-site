@@ -1,11 +1,40 @@
 #contact {
-    background-color: #fff;
-    border-radius: 30px;
+    height: 100vh;
     width: 100%;
     max-width: 750px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
     margin: 250px auto;
+}
+
+#contact input, 
+#contact textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact input {
+    height: 32px;
+}
+
+#contact .input-block {
     position: relative;
+    margin-bottom: 1.5rem;
+}
+
+#contact label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    opacity: 0.5;
+}
+
+#contact input:focus + label,
+#contact textarea:focus + label,
+#contact input:valid + label,
+#contact textarea:valid + label {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
 }
