@@ -1,14 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './Header.css';
 
 export default function Header() {
     return (
         <header id="main-header">
-            <Link to="/">Home</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/contato">Contato</Link>
+            <ul className="links">
+                <li>
+                    <NavLink to="/" activeClassName="active" exact>Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/sobre" activeClassName="active">Sobre</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/contato" activeClassName="active">Contato</NavLink>
+                </li>
+            </ul>
         </header>
     );
 }

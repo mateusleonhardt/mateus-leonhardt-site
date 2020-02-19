@@ -19,7 +19,7 @@ function Contact() {
                         required  
                         value={user_name}
                         onChange={e => setUsername(e.target.value)} />
-                    <label htmlFor="name">Nome</label>
+                    <label htmlFor="user_name">Nome</label>
                 </div>
                 <div className="input-block">
                     <input 
@@ -32,20 +32,18 @@ function Contact() {
                     <label htmlFor="email">E-mail</label>
                 </div>
                 <div className="input-block">
-                    
                     <textarea 
                         name="message" 
                         id="message"
-                        rows="5" 
+                        rows="10" 
                         required  
                         onChange={e => setMessage(e.target.value)} 
-                    >
-                        {message}
-                    </textarea>
+                        value={message}
+                    />
                     <label htmlFor="message">Mensagem</label>
                 </div>
 
-                <button type="submit">Enviar mensagem</button>
+                <button className="main-btn" type="submit">Enviar mensagem</button>
             </form>
         </div>
     );

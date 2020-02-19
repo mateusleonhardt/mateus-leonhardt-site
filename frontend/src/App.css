@@ -4,7 +4,10 @@
   Apricot: #F7882F
   Citrus: #F7C331
   Apple Core: #DCC7AA
+  Font: #32333C
 */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 *{
   margin: 0;
@@ -22,5 +25,90 @@ body {
 }
 
 body, input, button {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif; 
+}
+
+ul, ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #F7882F;
+  margin: 0px;
+}
+
+p {
+  color: #32333c;
+}
+
+.h1, h1 {
+  font-size: 2.5rem;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+}
+
+.h3, h3 {
+  font-size: 1.75rem;
+}
+
+.h4, h4 {
+  font-size: 1.5rem;
+}
+
+.h5, h5 {
+  font-size: 1.25rem;
+}
+
+.h6, h6 {
+  font-size: 1rem;
+}
+
+#root {
+  background-image: url("assets/interlaced.png");
+}
+
+#root::before {
+  background-color: rgb(104, 122, 143, 0.1);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.content {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  width: 980px;
+  z-index: 50;
+}
+
+.main-btn {
+  background-color: #F7882F;
+  border: 1px solid #F7882F;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(247, 136, 47, 0.55);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(247, 136, 47, 0.55);
+  box-shadow: 0px 5px 8px 0px rgba(247, 136, 47, 0.55);
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 48px;
+  padding: 0 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color: #fff;
+  color: #F7882F;
 }
