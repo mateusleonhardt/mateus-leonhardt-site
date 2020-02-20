@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Portfolio extends Component {
-     render() {
-         return (
-             <h1>Portfolio</h1>
-         );
-     }
+function Portfolio() {
+    return (
+        <div id="portfolio">
+            <section className="page-title">
+                <h2>Portfolio</h2>
+                <span>Portfolio</span>
+            </section>
+        </div>
+    );
 }
 
 export default Portfolio;

@@ -24,7 +24,7 @@ body {
   background: #FFF;
 }
 
-body, input, button {
+body, input, textarea, button {
   font-family: "Roboto", sans-serif; 
 }
 
@@ -38,7 +38,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #F7882F;
-  margin: 0px;
+  margin: 0;
+  position: relative;
 }
 
 p {
@@ -46,27 +47,27 @@ p {
 }
 
 .h1, h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .h2, h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .h3, h3 {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
 }
 
 .h4, h4 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .h5, h5 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .h6, h6 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 #root {
@@ -74,7 +75,7 @@ p {
 }
 
 #root::before {
-  background-color: rgb(104, 122, 143, 0.1);
+  background-color: rgb(104, 122, 143, 0.03);
   content: '';
   height: 100%;
   position: absolute;
@@ -83,11 +84,66 @@ p {
 }
 
 .content {
+  align-items: center;
+  display: flex;
   height: 100vh;
   margin: 0 auto;
+  padding-top: 79px;
   position: relative;
   width: 980px;
   z-index: 50;
+}
+
+.page-title {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.page-title h2 {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.page-title h2::after, 
+.page-title h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  height: 5px;
+  border-radius: 100px;
+}
+
+.page-title h2::after {
+  width: 35px;
+  background: #F7882F;
+}
+
+.page-title h2::before {
+  width: 100px;
+  background: rgba(247, 136, 47, .3)
+}
+
+.page-title h2 + span {
+  position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 900;
+    color: rgba(104, 122, 143,.1);
+    display: inline-block;
+    text-transform: uppercase;
+    z-index: -1;
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
 }
 
 .main-btn {
@@ -111,4 +167,8 @@ p {
 .main-btn:hover {
   background-color: #fff;
   color: #F7882F;
+}
+
+.error {
+  color: red;
 }
