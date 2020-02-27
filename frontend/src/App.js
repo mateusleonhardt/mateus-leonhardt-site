@@ -2,14 +2,15 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
 import './App.css';
 
 import Header from './components/Header';
 import Routes from './routes';
 
-function App() {
-  library.add(fab);
+export default function App() {
+  library.add(fab, fas);
 
   return (
     <>
@@ -22,5 +23,3 @@ function App() {
     </>
   );
 }
-
-export default App;

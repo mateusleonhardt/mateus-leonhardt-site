@@ -1,42 +1,51 @@
-import React, { useState } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
+import React, { useRef } from 'react';
+import { Form } from '@unform/web';
+import * as Yup from 'yup';
+
+import Input from '../../components/Form/Input';
+import Textarea from '../../components/Form/Textarea';
+import Recaptcha from '../../components/Form/Recaptcha';
 
 import './styles.css';
 
-function Contact() {
-    const [user_name, setUsername] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [recaptcha, setRecaptcha] = useState('');
-    const [errors, setErrors] = useState({});
+export default function Contact() {
+    const formRef = useRef(null);
 
-    const site_key = "6LcNqtoUAAAAAKeLBEmYpOmGD1Xo7g_XwcIpFHbn";
+    async function handleSubmit(data, { reset }) {
+        try{
+            const schema = Yup.object().shape({
+                user_name: Yup.string()
+                    .required('Por favor, insira um nome'),
+                email: Yup.string()
+                    .email('Por favor, insira um e-mail válido')
+                    .required('Por favor, insira um e-mail'),
+                message: Yup.string()
+                    .required('Por favor, insira uma mensagem'),
+                recaptcha: Yup.string()
+                    .required('Por favor, marque o reCAPTCHA')
+                    .nullable()
+            });
 
-    function onChangeRecaptcha(value) {
-        setRecaptcha(value);
-    }
+            await schema.validate(data, {
+                abortEarly: false,
+            })
 
-    function handleValidation() {
-        let isValid = true;
-        let errors = {};
+            console.log(data)
 
+            formRef.current.setErrors({});
 
-        if (!recaptcha) {
-            isValid = false;
-            errors["recaptcha"] = "Por favor, marque o reCAPTCHA";
-        } else {
-            errors["recaptcha"] = "";
-        }
-        
-        setErrors(errors);
-        return isValid;
-    }
+            window.grecaptcha.reset();
+            reset();
+        } catch (err) {
+            if (err instanceof Yup.ValidationError) {
+                const errorMessages = {};
 
-    function handleSubmit(e) {
-        e.preventDefault();
+                err.inner.forEach(error => {
+                    errorMessages[error.path] = error.message;
+                })
 
-        if (handleValidation()) {
-            e.target.submit();
+                formRef.current.setErrors(errorMessages);
+            }
         }
     }
 
@@ -47,53 +56,15 @@ function Contact() {
                 <span>Contato</span>
             </section>
             <p>Deixe-me uma mensagem e em breve entrarei em contato!</p>
-            <form onSubmit={handleSubmit}>
-                <div className="input-block">
-                    <input 
-                        name="user_name" 
-                        id="user_name" 
-                        required  
-                        value={user_name}
-                        onChange={e => setUsername(e.target.value)} />
-                    <label htmlFor="user_name">Nome*</label>
-                    <span className="error">{errors.user_name}</span>
-                </div>
-                <div className="input-block">
-                    <input 
-                        type="email"
-                        name="email" 
-                        id="email" 
-                        required  
-                        value={email}
-                        onChange={e => setEmail(e.target.value)} />
-                    <label htmlFor="email">E-mail*</label>
-                    <span className="error">{errors.email}</span>
-                </div>
-                <div className="input-block">
-                    <textarea 
-                        name="message" 
-                        id="message"
-                        rows="10" 
-                        required  
-                        onChange={e => setMessage(e.target.value)} 
-                        value={message}
-                    />
-                    <label htmlFor="message">Mensagem*</label>
-                    <span className="error">{errors.message}</span>
-                </div>
 
-                <div className="recaptcha">
-                    <ReCAPTCHA 
-                        sitekey={site_key} 
-                        onChange={onChangeRecaptcha} 
-                    /> 
-                    <span className="error">{errors.recaptcha}</span>
-                </div>
+            <Form ref={formRef} onSubmit={handleSubmit}>
+                <Input name="user_name" label="Nome*" required />
+                <Input name="email" label="E-mail*" type="email" required />
+                <Textarea name="message" label="Mensagem*" rows="10" required />
+                <Recaptcha name="recaptcha" />
 
                 <button className="main-btn" type="submit">Enviar mensagem</button>
-            </form>
+            </Form>
         </div>
     );
 }
-
-export default Contact;

@@ -5,7 +5,7 @@ import photo from '../../assets/mateus-leonhardt.jpeg';
 
 import './styles.css';
 
-function Home() {
+export default function Home() {
     return (
         <div id="home">
             <div className="profile">
@@ -32,5 +32,3 @@ function Home() {
         </div>
     );
 }
-
-export default Home;

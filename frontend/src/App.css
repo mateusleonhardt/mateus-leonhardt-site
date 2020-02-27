@@ -170,5 +170,8 @@ p {
 }
 
 .error {
-  color: red;
+  color: #ff0000;
+  display: block;
+  padding-top: 5px;
+  padding-left: 5px;
 }

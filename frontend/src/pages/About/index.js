@@ -2,7 +2,7 @@ import React from 'react';
 
 //import './styles.css';
 
-function About() {
+export default function About() {
     return (
         <div id="about">
             <section className="page-title">
@@ -12,5 +12,3 @@ function About() {
         </div>
     );
 }
-
-export default About;
