@@ -1,0 +1,30 @@
+.skill-name {
+    color: #fff;
+    font-size: 18px;
+    line-height: 37px;
+    margin-left: 12px;
+    position: absolute;
+}
+
+.progress {
+    margin-bottom: 35px;
+    height: 36px;
+    background-color: #687A8F;
+    border-radius: 0;
+}
+
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #F7882F;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}

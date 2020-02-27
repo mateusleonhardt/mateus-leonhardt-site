@@ -6,7 +6,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 
 import './App.css';
 
-import Header from './components/Header';
+import Header from './components/Header/index';
 import Routes from './routes';
 
 export default function App() {
