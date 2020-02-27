@@ -1,21 +1,11 @@
 import React from 'react';
 
-//import './styles.css';
-import PageTitle from '../../components/PageTitle/index';
-import Skills from '../../components/Skills/index';
+import { skills } from '../../data/site-data';
+
+import PageTitle from '../../components/PageTitle';
+import Skills from '../../components/Skills';
 
 export default function About() {
-    const skills = [
-        {
-            label: "HTML & CSS",
-            level: 5
-        },
-        {
-            label: "ReactJS",
-            level: 3
-        }
-    ];
-
     return (
         <>
             <div id="about">
