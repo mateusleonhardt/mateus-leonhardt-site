@@ -1,0 +1,6 @@
+.idioms {
+    display: grid;
+    grid-template-columns:  50% 50%;
+    gap: 30px;
+    padding-top: 35px;
+}

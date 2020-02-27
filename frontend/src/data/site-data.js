@@ -61,5 +61,17 @@ module.exports = {
             level: 4,
         },
         
-    ]
+    ],
+    idioms: [
+        {
+            label: "Português",
+            description: "Lingua Materna",
+            level: 5,
+        },
+        {
+            label: "Inglês",
+            description: "Nível Intermediário",
+            level: 4,
+        },
+    ],
 }
