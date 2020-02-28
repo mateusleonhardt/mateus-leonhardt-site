@@ -10,13 +10,6 @@
     position: absolute;
 }
 
-.description {
-    color: #687A8F;
-    font-size: 1rem;
-    position: absolute;
-    top: -20px;
-}
-
 .progress {
     height: 36px;
     background-color: #687A8F;

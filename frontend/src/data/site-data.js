@@ -1,4 +1,7 @@
 module.exports = {
+    email: 'mateus.leonhardt@gmail.com',
+    github: 'https://github.com/mateusleonhardt/',
+    linkedin: 'https://www.linkedin.com/in/mateusleonhardt/',
     skills: [
         {
             label: 'AngularJS',
@@ -65,13 +68,51 @@ module.exports = {
     idioms: [
         {
             label: "Português",
-            description: "Lingua Materna",
             level: 5,
         },
         {
             label: "Inglês",
-            description: "Nível Intermediário",
             level: 4,
         },
+    ],
+    experiences: [
+        {
+            id: 1,
+            period: 'Atual',
+            company: 'Conectt',
+            link: 'https://conectt.com.br/',
+            ocupation: 'Programador Pleno',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.',
+            status: 'present',
+        },
+        {
+            id: 2,
+            period: '2013',
+            company: 'Conectt',
+            link: 'https://conectt.com.br/',
+            ocupation: 'Programador Júnior',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.',
+            status: '',
+        },
+        {
+            id: 3,
+            period: '2012',
+            company: 'Conectt',
+            link: 'https://conectt.com.br/',
+            ocupation: 'Programador Estagiário',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.',
+            status: '',
+        },
+    ],
+    projects: [
+        {
+            label: 'AJESC'
+        },
+        {
+            label: 'Symbol Idioms'
+        },
+        {
+            label: ''
+        }
     ],
 }

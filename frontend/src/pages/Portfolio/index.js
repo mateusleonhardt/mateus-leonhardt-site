@@ -3,15 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './styles.css';
 
+import PageTitle from '../../components/PageTitle';
 import ajesc from '../../assets/ajesc.png';
 
 export default function Portfolio() {
     return (
         <div id="portfolio">
-            <section className="page-title">
-                <h2>Portfolio</h2>
-                <span>Portfolio</span>
-            </section>
+            <PageTitle title="Portfolio" />
 
             <div className="projects">
                 <div className="work">

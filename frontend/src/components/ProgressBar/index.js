@@ -15,7 +15,6 @@ export default function ProgressBar({data}) {
     return (
         <div className="box">
             <h3 className="name">{ data.label }</h3>
-            { data.description && <h4 className="description">{data.description}</h4>}
             <div className="progress"> 
                 <div className="progress-bar" style={level}></div>
             </div>

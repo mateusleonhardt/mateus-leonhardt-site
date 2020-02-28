@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { github, linkedin } from '../../data/site-data';
 import photo from '../../assets/mateus-leonhardt.jpeg';
 
 import './styles.css';
@@ -24,8 +25,8 @@ export default function Home() {
             <div className="header-social">
                 <div className="header-social-icon">
                     <ul>
-                        <li><a href="https://github.com/mateusleonhardt/" title="Github"><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
-                        <li><a href="https://www.linkedin.com/in/mateusleonhardt/" title="Linkedin"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
+                        <li><a href={github} title="Github"><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
+                        <li><a href={linkedin} title="Linkedin"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
                     </ul>
                 </div> 
             </div>
