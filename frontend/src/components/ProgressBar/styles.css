@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.name {
+.box .name {
     color: #fff;
     font-size: 1.2rem;
     line-height: 37px;

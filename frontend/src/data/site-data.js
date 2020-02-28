@@ -68,11 +68,11 @@ module.exports = {
     idioms: [
         {
             label: "Português",
-            level: 5,
+            level: 10,
         },
         {
             label: "Inglês",
-            level: 4,
+            level: 7.5,
         },
     ],
     experiences: [

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PageTitle from '../PageTitle';
-import ProgressBar from '../ProgressBar';
+import ProgressBullet from '../ProgressBullet';
 
 import './styles.css';
 
@@ -10,11 +10,11 @@ export default function Idioms({data}) {
         <section id="idioms-container">
             <PageTitle title="Idiomas" />
 
-            <div className="idioms">
+            <ul className="idioms">
                 {data.map(idiom => (
-                    <ProgressBar key={idiom.label} data={idiom} />
+                    <ProgressBullet key={idiom.label} data={idiom} />
                 ))}
-            </div>
+            </ul>
         </section>
     );
 }
