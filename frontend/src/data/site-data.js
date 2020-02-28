@@ -79,7 +79,7 @@ module.exports = {
         {
             id: 1,
             period: 'Atual',
-            company: 'Conectt',
+            company: 'Conectt - Santa Cruz do Sul / RS',
             link: 'https://conectt.com.br/',
             ocupation: 'Programador Pleno',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.',
@@ -88,7 +88,7 @@ module.exports = {
         {
             id: 2,
             period: '2013',
-            company: 'Conectt',
+            company: 'Conectt - Santa Cruz do Sul / RS',
             link: 'https://conectt.com.br/',
             ocupation: 'Programador Júnior',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.',
@@ -97,7 +97,7 @@ module.exports = {
         {
             id: 3,
             period: '2012',
-            company: 'Conectt',
+            company: 'Conectt - Santa Cruz do Sul / RS',
             link: 'https://conectt.com.br/',
             ocupation: 'Programador Estagiário',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.',
@@ -109,10 +109,10 @@ module.exports = {
             label: 'AJESC'
         },
         {
-            label: 'Symbol Idioms'
+            label: 'Symbol Idiomas'
         },
         {
-            label: ''
+            label: 'Praxis Medicina Ocupacional'
         }
     ],
 }
