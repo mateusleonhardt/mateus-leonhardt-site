@@ -82,7 +82,7 @@ module.exports = {
             company: 'Conectt - Santa Cruz do Sul / RS',
             link: 'https://conectt.com.br/',
             ocupation: 'Programador Pleno',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
             status: 'present',
         },
         {
@@ -91,7 +91,7 @@ module.exports = {
             company: 'Conectt - Santa Cruz do Sul / RS',
             link: 'https://conectt.com.br/',
             ocupation: 'Programador Júnior',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
             status: '',
         },
         {
@@ -100,19 +100,55 @@ module.exports = {
             company: 'Conectt - Santa Cruz do Sul / RS',
             link: 'https://conectt.com.br/',
             ocupation: 'Programador Estagiário',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
             status: '',
         },
     ],
     projects: [
         {
-            label: 'AJESC'
+            label: 'AJESC',
+            link: 'http://ajesc.com.br/',
+            image: require('../assets/ajesc.png'),
+            technologies: [
+                {
+                    type: 'fab',
+                    name: 'html5'
+                },
+                {
+                    type: 'fab',
+                    name: 'wordpress'
+                }
+            ]
         },
         {
-            label: 'Symbol Idiomas'
+            label: 'Symbol Idiomas',
+            link: 'https://symbolidiomas.com.br/',
+            image: require('../assets/ajesc.png'),
+            technologies: [
+                {
+                    type: 'fab',
+                    name: 'html5'
+                },
+                {
+                    type: 'fab',
+                    name: 'wordpress'
+                }
+            ]
         },
         {
-            label: 'Praxis Medicina Ocupacional'
+            label: 'Praxis Medicina Ocupacional',
+            link: 'https://praxismedicinaocupacional.com.br/',
+            image: require('../assets/ajesc.png'),
+            technologies: [
+                {
+                    type: 'fab',
+                    name: 'html5'
+                },
+                {
+                    type: 'fab',
+                    name: 'wordpress'
+                }
+            ]
         }
     ],
 }

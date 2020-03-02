@@ -1,10 +1,11 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { projects } from '../../data/site-data';
 
 import './styles.css';
 
 import PageTitle from '../../components/PageTitle';
-import ajesc from '../../assets/ajesc.png';
+import Projects from '../../components/Projects';
 
 export default function Portfolio() {
     return (
@@ -12,17 +13,7 @@ export default function Portfolio() {
             <PageTitle title="Portfolio" />
 
             <div className="projects">
-                <div className="work">
-                    <img src={ajesc} alt="AJESC"/>
-                    <div className="language">
-                        <FontAwesomeIcon icon={['fab', 'html5']} />
-                        <FontAwesomeIcon icon={['fab', 'wordpress']} />
-                    </div>
-                    <div className="info">
-                        <h3>AJESC</h3>
-                        <a href="/"><FontAwesomeIcon icon={['fas', 'link']} /></a>
-                    </div>
-                </div>
+                <Projects data={projects} />
             </div>
         </div>
     );
