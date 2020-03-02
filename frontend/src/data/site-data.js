@@ -106,9 +106,10 @@ module.exports = {
     ],
     projects: [
         {
-            label: 'AJESC',
-            link: 'http://ajesc.com.br/',
-            image: require('../assets/ajesc.png'),
+            label: 'Symbol Idiomas',
+            link: 'https://symbolidiomas.com.br/',
+            image: require('../assets/symbol-idiomas.png'),
+            year: '2018',
             technologies: [
                 {
                     type: 'fab',
@@ -121,9 +122,10 @@ module.exports = {
             ]
         },
         {
-            label: 'Symbol Idiomas',
-            link: 'https://symbolidiomas.com.br/',
+            label: 'AJESC',
+            link: 'http://ajesc.com.br/',
             image: require('../assets/ajesc.png'),
+            year: '2019',
             technologies: [
                 {
                     type: 'fab',
@@ -138,7 +140,8 @@ module.exports = {
         {
             label: 'Praxis Medicina Ocupacional',
             link: 'https://praxismedicinaocupacional.com.br/',
-            image: require('../assets/ajesc.png'),
+            image: require('../assets/praxis.png'),
+            year: '2019',
             technologies: [
                 {
                     type: 'fab',

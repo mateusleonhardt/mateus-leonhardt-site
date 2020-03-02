@@ -7,7 +7,7 @@ export default function Projects({data}) {
     return (
         <>
             {data.map(project => (
-                <div className="work">
+                <div className="project">
                     <img src={project.image} alt={project.label} />
                     <div className="language">
                         {project.technologies.map(technologie => (
@@ -18,6 +18,7 @@ export default function Projects({data}) {
                         <h3>{project.label}</h3>
                         <a href={project.link}><FontAwesomeIcon icon={['fas', 'link']} /></a>
                     </div>
+                    <div className="delivered-on">{project.year}</div>
                 </div>
             ))}
         </>       
