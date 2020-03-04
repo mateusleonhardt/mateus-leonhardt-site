@@ -154,4 +154,18 @@ module.exports = {
             ]
         }
     ],
+    education: [
+        {
+            course: 'Bacharelado em Ciência da Computação',
+            institution: {
+                name: 'Universidade de Santa Cruz do Sul - UNISC',
+                site: ''
+            }, 
+            period: '2010 - 2017',
+            icon: {
+                type: 'fas',
+                name: 'university'
+            },
+        }
+    ],
 }

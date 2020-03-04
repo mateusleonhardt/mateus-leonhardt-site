@@ -1,5 +1,10 @@
 .bullet-item {
     position: relative;
+    margin-top: 45px;
+}
+
+.bullet-item:first-child {
+    margin-top: 0;
 }
 
 .bullet-item .name {
