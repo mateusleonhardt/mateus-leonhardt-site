@@ -1,5 +1,8 @@
 #contact {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    justify-content: center;
     margin: -79px auto 0;
     max-width: 500px;
     width: 100%;
