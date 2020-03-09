@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { github, linkedin } from '../../data/site-data';
 
-export default function SocialIcons() {
+export default function SocialIcons(props) {
     return (
-        <ul>
+        <ul className={props.className}>
             <li><a href={github} title="Github"><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
             <li><a href={linkedin} title="Linkedin"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
         </ul>

@@ -10,9 +10,7 @@ export default function Footer() {
 
     return (
         <footer id="main-footer">
-            <div className="social-icons">
-                <SocialIcons />
-            </div> 
+            <SocialIcons className="social-icons" />
             <div class="copyright">
                 <h4>©{currentDate.getFullYear()} | Desenvolvido por {name} </h4>
             </div>
