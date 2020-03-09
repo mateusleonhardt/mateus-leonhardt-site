@@ -1,4 +1,5 @@
 module.exports = {
+    name: 'Mateus Leonhardt',
     email: 'mateus.leonhardt@gmail.com',
     github: 'https://github.com/mateusleonhardt/',
     linkedin: 'https://www.linkedin.com/in/mateusleonhardt/',
