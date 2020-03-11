@@ -22,6 +22,7 @@ html, body, #root {
 
 body {
   background: #FFF;
+  font-size: 1.13rem;
 }
 
 body, input, textarea, button {
@@ -42,8 +43,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+strong {
+  color: #F7882F;
+}
+
 p {
   color: #32333c;
+  text-align: justify;
 }
 
 .h1, h1 {

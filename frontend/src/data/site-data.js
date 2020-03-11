@@ -29,6 +29,10 @@ module.exports = {
             level: 4,
         },
         {
+            label: 'Google Analytics',
+            level: 3.5,
+        },
+        {
             label: 'HTML & CSS',
             level: 5,
         },
@@ -83,7 +87,7 @@ module.exports = {
             company: 'Conectt - Santa Cruz do Sul / RS',
             link: 'https://conectt.com.br/',
             ocupation: 'Programador Pleno',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+            description: 'Desenvolvimento de intranets e websites utilizando a plataforma Microsoft Sharepoint HTML5, CSS, Javascript, AngularJS, .NET C#, ASP.NET MVC e Wordpress. Criação de fluxos de trabalho utilizando Microsoft Flow',
             status: 'present',
         },
         {
@@ -92,7 +96,7 @@ module.exports = {
             company: 'Conectt - Santa Cruz do Sul / RS',
             link: 'https://conectt.com.br/',
             ocupation: 'Programador Júnior',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+            description: 'Desenvolvimento de intranets e websites utilizando a plataforma Microsoft Sharepoint HTML5, CSS, Javascript, AngularJS e .NET C#. Geração de dashboards e análise de dados no Google Analytics',
             status: '',
         },
         {
@@ -101,7 +105,7 @@ module.exports = {
             company: 'Conectt - Santa Cruz do Sul / RS',
             link: 'https://conectt.com.br/',
             ocupation: 'Programador Estagiário',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+            description: 'Desenvolvimento de intranets e websites utilizando a plataforma Microsoft Sharepoint utilizando HTML5, CSS e Javascript',
             status: '',
         },
     ],
