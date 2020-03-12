@@ -8,6 +8,7 @@ import './App.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Breadcrumbs from './components/Breadcrumbs';
 import Routes from './routes';
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
       <BrowserRouter>
         <Header />        
         <div className="content">
+          <Breadcrumbs />
           <Routes />
         </div>
         <Footer />

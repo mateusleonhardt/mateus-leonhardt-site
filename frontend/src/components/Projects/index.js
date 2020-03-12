@@ -7,11 +7,11 @@ export default function Projects({data}) {
     return (
         <>
             {data.map(project => (
-                <div className="project">
+                <div className="project" key={project.label}>
                     <img src={project.image} alt={project.label} />
                     <div className="language">
                         {project.technologies.map(technologie => (
-                            <FontAwesomeIcon icon={[technologie.type, technologie.name]} />
+                            <FontAwesomeIcon icon={[technologie.type, technologie.name]} key={technologie.name} />
                         ))}
                     </div>
                     <div className="info">

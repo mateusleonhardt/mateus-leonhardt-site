@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {skills, idioms, experiences, education } from '../../data/site-data';
+import {skills, idioms, experiences, education} from '../../data/site-data';
 
 import PageTitle from '../../components/PageTitle';
 import Skills from '../../components/Skills';
