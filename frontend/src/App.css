@@ -101,6 +101,11 @@ p {
   z-index: 50;
 }
 
+#about .page-title,
+#portfolio .page-title {
+  margin-top: 0;
+}
+
 .main-btn {
   background-color: #F7882F;
   border: 1px solid #F7882F;
@@ -129,4 +134,11 @@ p {
   display: block;
   padding-top: 5px;
   padding-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

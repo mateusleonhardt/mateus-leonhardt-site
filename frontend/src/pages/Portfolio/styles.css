@@ -4,3 +4,9 @@
     gap: 30px;
     padding-top: 30px;
 }
+
+@media screen and (max-width: 767px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}

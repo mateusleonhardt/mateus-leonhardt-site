@@ -39,22 +39,22 @@ header .links {
     width: 980px;
 }
 
-header .menu {
+header .main-menu {
     align-items: center;
     display: flex;
     justify-content: flex-end;
 }
 
-header .menu li {
+header .menu-list li {
     margin-left: 30px;
     display: inline-block;
 }
 
-header .menu li:first-child {
+header .menu-list li:first-child {
     margin-left: 0;
 }
 
-header .menu a {
+header .menu-list a {
     color: #fff;
     font-weight: bold;
     position: relative;
@@ -62,7 +62,7 @@ header .menu a {
     text-transform: uppercase;
 }
 
-header .menu a::before {
+header .menu-list a::before {
     position: absolute;
     content: '';
     width: 3px;
@@ -82,7 +82,53 @@ header .menu a::before {
     transition: all 0.3s ease-out 0s;
 }
 
-header .menu li:hover a::before,
-header .menu li a.active::before {
+header .menu-list li:hover a::before,
+header .menu-list li a.active::before {
     height: 45px;
+}
+
+@media screen and (max-width: 767px) {
+    header .links {
+        grid-template-columns: 1fr 32px;
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    header .main-menu {
+        align-items: center;
+        height: 0;
+        justify-content: flex-start;
+        margin-top: 80px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        flex-direction: column;
+        background: #32333c;
+        color: #fff;
+        transition: height 0.6s ease;
+        z-index: 2;
+    }
+
+    header .main-menu.active {
+        height: 208px;
+    }
+
+    header .main-menu.active .menu-list li {
+        opacity: 1;
+        transition: 0.8s ease;
+    }
+
+    header .menu-list li{
+        display: block;
+        margin-left: 0;
+        padding-bottom: 30px;
+        text-align: center;
+        opacity: 0;
+        transition: 0.3s ease;        
+    }
+
+    header .menu-list a::before {
+        display: none;
+    }
 }

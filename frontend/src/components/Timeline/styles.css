@@ -147,7 +147,7 @@
 }
   
   
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #timeline {
       margin: 30px;
       padding: 0px;
@@ -169,6 +169,10 @@
       margin-left: -6px;
       border-left: 0;
       border-right: 7px solid #687A8F;
+    }
+
+    #timeline .timeline-item.present .timeline-content:before {
+        border-right-color: #F7882F;
     }
 
     #timeline .timeline-item .timeline-period {

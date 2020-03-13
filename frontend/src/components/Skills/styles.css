@@ -4,3 +4,9 @@
     gap: 30px;
     padding-top: 15px;
 }
+
+@media screen and (max-width: 767px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,3 +1,9 @@
 .idioms {
     width: 50%;
 }
+
+@media screen and (max-width: 767px) {
+    .idioms {
+        width: 100%;
+    }
+}
