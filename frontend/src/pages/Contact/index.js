@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
+import { Helmet } from 'react-helmet';
 
 import Input from '../../components/Form/Input';
 import Textarea from '../../components/Form/Textarea';
@@ -50,21 +51,28 @@ export default function Contact() {
     }
 
     return (
-        <div id="contact">
-            <section className="page-title">
-                <h2>Contato</h2>
-                <span>Contato</span>
-            </section>
-            <p>Deixe-me uma mensagem e em breve entrarei em contato!</p>
+        <>
+            <Helmet>
+                <title>Contato | Mateus Leonhardt</title>
+                <meta name="keywords" content="mateus leonhardt, leonhardt, contato, fale conosco"/>
+            </Helmet>
 
-            <Form ref={formRef} onSubmit={handleSubmit}>
-                <Input name="user_name" label="Nome*" required />
-                <Input name="email" label="E-mail*" type="email" required />
-                <Textarea name="message" label="Mensagem*" rows="10" required />
-                <Recaptcha name="recaptcha" />
+            <div id="contact">
+                <section className="page-title">
+                    <h2>Contato</h2>
+                    <span>Contato</span>
+                </section>
+                <p>Deixe-me uma mensagem e em breve entrarei em contato!</p>
 
-                <button className="main-btn" type="submit">Enviar mensagem</button>
-            </Form>
-        </div>
+                <Form ref={formRef} onSubmit={handleSubmit}>
+                    <Input name="user_name" label="Nome*" required />
+                    <Input name="email" label="E-mail*" type="email" required />
+                    <Textarea name="message" label="Mensagem*" rows="10" required />
+                    <Recaptcha name="recaptcha" />
+
+                    <button className="main-btn" type="submit">Enviar mensagem</button>
+                </Form>
+            </div>
+        </>
     );
 }

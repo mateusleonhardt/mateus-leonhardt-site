@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import { projects } from '../../data/site-data';
 
@@ -9,12 +10,19 @@ import Projects from '../../components/Projects';
 
 export default function Portfolio() {
     return (
-        <div id="portfolio">
-            <PageTitle title="Portfolio" />
+        <>
+            <Helmet>
+                <title>Portfólio | Mateus Leonhardt</title>
+                <meta name="keywords" content="mateus leonhardt, leonhardt, portfólios, projetos, sites, aplicativos,"/>
+            </Helmet>
 
-            <div className="projects">
-                <Projects data={projects} />
+            <div id="portfolio">
+                <PageTitle title="Portfolio" />
+
+                <div className="projects">
+                    <Projects data={projects} />
+                </div>
             </div>
-        </div>
+        </>
     );
 }

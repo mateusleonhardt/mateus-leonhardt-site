@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import {skills, idioms, experiences, education} from '../../data/site-data';
 
@@ -11,6 +12,11 @@ import Education from '../../components/Education';
 export default function About() {
     return (
         <>
+            <Helmet>
+                <title>Sobre mim | Mateus Leonhardt</title>
+                <meta name="keywords" content="mateus leonhardt, leonhardt, sobre, sobre mim, websites, sistemas, c#, asp.net mvc,"/>
+            </Helmet>
+
             <div id="about">
                 <PageTitle title="Sobre mim" />
                 <p>Olá! Quer saber mais sobre mim?!</p>
