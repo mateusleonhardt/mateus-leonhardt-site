@@ -94,7 +94,7 @@ p {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 1140px;
   padding-top: 79px;
   position: relative;
   width: 100%;
@@ -134,6 +134,20 @@ p {
   display: block;
   padding-top: 5px;
   padding-left: 5px;
+}
+
+@media screen and (max-width: 1199px) {
+  .content {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 720px;
+  }
 }
 
 @media screen and (max-width: 767px) {

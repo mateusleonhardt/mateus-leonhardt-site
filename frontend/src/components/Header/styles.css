@@ -36,7 +36,7 @@ header .links {
     display: grid;
     grid-template-columns: 20% 80%;
     margin: 0 auto;
-    width: 980px;
+    width: 1140px;
 }
 
 header .main-menu {
@@ -85,6 +85,20 @@ header .menu-list a::before {
 header .menu-list li:hover a::before,
 header .menu-list li a.active::before {
     height: 45px;
+}
+
+@media screen and (max-width: 1199px) {
+    header .links {
+      max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header .links {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 720px;
+    }
 }
 
 @media screen and (max-width: 767px) {

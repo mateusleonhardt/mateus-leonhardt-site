@@ -2,7 +2,7 @@
     padding: 45px 0 15px;
     position: relative;
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 1140px;
     width: 100%;
 }
 
@@ -70,6 +70,28 @@
     color: #32333c;
     font-size: 1rem;
     font-weight: normal;
+}
+
+@media screen and (max-width: 1199px) {
+    #main-footer {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #main-footer {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 720px;
+    }
+
+    #main-footer::before {
+        left: -99.5%;
+    }
+
+    #main-footer .copyright {
+        right: 15px;
+    }
 }
 
 @media screen and (max-width: 767px) {

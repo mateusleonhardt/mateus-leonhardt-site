@@ -71,3 +71,15 @@
     right: 0;
     top: 0;
 }
+
+@media screen and (max-width: 1199px) {
+    .education {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .education .inner-info {
+        padding: 10px 140px 10px 145px;
+    }
+}
