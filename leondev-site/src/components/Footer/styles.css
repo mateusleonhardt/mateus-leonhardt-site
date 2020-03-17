@@ -1,0 +1,133 @@
+#main-footer {
+    padding: 45px 0 15px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+}
+
+#main-footer::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #F7882F;
+    left: -102.5%;
+    top: 65%;
+    -webkit-transform: translateY(-65%);
+    -moz-transform: translateY(-65%);
+    -ms-transform: translateY(-65%);
+    -o-transform: translateY(-65%);
+    transform: translateY(-65%);
+}
+
+#main-footer .social-icons,
+#main-footer .copyright {
+    display: inline-block;
+    position: relative;
+}
+
+#main-footer .social-icons li {
+    display: inline-block;
+    margin-left: 13px;
+}
+
+#main-footer .social-icons li:first-child {
+    margin-left: 0;
+}
+
+#main-footer .social-icons li a {
+    color: #32333C;
+    display: inline-block;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #32333C;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    text-align: center;
+}
+
+#main-footer .social-icons li a:hover {
+    color: #fff;
+    background-color: #F7882F;
+    border-color: #F7882F;
+}
+
+#main-footer .copyright {
+    position: absolute;
+    right: 0;
+    top: 65%;
+    transform: translateY(-65%);
+}
+
+#main-footer .copyright h4 {
+    color: #32333c;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1199px) {
+    #main-footer {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #main-footer {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 720px;
+    }
+
+    #main-footer::before {
+        left: -99.5%;
+    }
+
+    #main-footer .copyright {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #main-footer {
+        overflow: hidden;
+    }
+
+    #main-footer .social-icons {
+        display: block;
+        text-align: center;
+    }
+
+    #main-footer .copyright {
+        display: block;
+        padding: 15px 0;
+        position: relative;
+        text-align: center;
+        top: 0;
+        transform: none;
+    }
+
+    #main-footer::before {
+        left: -65.5%;
+        top: 45%;
+        transform: translateY(-45%);
+    }
+
+    #main-footer::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #F7882F;
+        right: -65.5%;
+        top: 45%;
+        transform: translateY(-45%);
+    }
+
+}

@@ -1,0 +1,57 @@
+.page-title {
+    position: relative;
+    margin: 90px 0 45px;
+}
+
+.page-title h2 {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.page-title h2::after, 
+.page-title h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    height: 5px;
+    border-radius: 100px;
+}
+
+.page-title h2::after {
+    width: 35px;
+    background: #F7882F;
+}
+
+.page-title h2::before {
+    width: 100px;
+    background: rgba(247, 136, 47, .3)
+}
+
+.page-title h2 + span {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 900;
+    color: rgba(104, 122, 143,.1);
+    display: inline-block;
+    text-transform: uppercase;
+    z-index: -1;
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+    .page-title h2 + span {
+        font-size: 3.5rem;
+    }
+}
