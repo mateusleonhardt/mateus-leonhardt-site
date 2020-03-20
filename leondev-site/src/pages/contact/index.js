@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
-import { Form } from '@unform/web';
 import * as Yup from 'yup';
 import { Helmet } from 'react-helmet';
 
+import Layout from '../../components/Layout';
 import PageTitle from '../../components/PageTitle';
-import Input from '../../components/Form/Input';
-import Textarea from '../../components/Form/Textarea';
 import Recaptcha from '../../components/Form/Recaptcha';
+
+import { ContactContainer, Form, InputForm, TextareaForm } from "./styles";
 
 export default function Contact() {
     const formRef = useRef(null);
@@ -50,25 +50,25 @@ export default function Contact() {
     }
 
     return (
-        <>
+        <Layout>
             <Helmet>
                 <title>Contato | Mateus Leonhardt</title>
                 <meta name="keywords" content="mateus leonhardt, leonhardt, contato, fale conosco"/>
             </Helmet>
 
-            <div id="contact">
+            <ContactContainer>
                 <PageTitle title="Contato" />
                 <p>Deixe-me uma mensagem e em breve entrarei em contato!</p>
 
                 <Form ref={formRef} onSubmit={handleSubmit}>
-                    <Input name="user_name" label="Nome*" required />
-                    <Input name="email" label="E-mail*" type="email" required />
-                    <Textarea name="message" label="Mensagem*" rows="10" required />
+                    <InputForm name="user_name" label="Nome*" required />
+                    <InputForm name="email" label="E-mail*" type="email" required />
+                    <TextareaForm name="message" label="Mensagem*" rows="10" required />
                     <Recaptcha name="recaptcha" />
 
                     <button className="main-btn" type="submit">Enviar mensagem</button>
                 </Form>
-            </div>
-        </>
+            </ContactContainer>
+        </Layout>
     );
 }

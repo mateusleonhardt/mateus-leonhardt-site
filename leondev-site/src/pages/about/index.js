@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import {skills, idioms, experiences, education} from '../../../config/metadata';
 
+import Layout from '../../components/Layout';
 import PageTitle from '../../components/PageTitle';
 import Skills from '../../components/Skills';
 import Idioms from '../../components/Idioms';
@@ -11,7 +12,7 @@ import Education from '../../components/Education';
 
 export default function About() {
     return (
-        <>
+        <Layout>
             <Helmet>
                 <title>Sobre mim | Mateus Leonhardt</title>
                 <meta name="keywords" content="mateus leonhardt, leonhardt, sobre, sobre mim, websites, sistemas, c#, asp.net mvc,"/>
@@ -35,6 +36,6 @@ export default function About() {
             <Experiences data={experiences} />
 
             <Education data={education} />
-        </>
+        </Layout>
     );
 }

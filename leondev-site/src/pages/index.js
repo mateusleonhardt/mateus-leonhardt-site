@@ -4,6 +4,7 @@ import Img from "gatsby-image";
 import { Helmet } from 'react-helmet';
 
 import { title } from '../../config/metadata';
+import Layout from '../components/Layout';
 
 export default function () {
     const getImage = () => {
@@ -29,7 +30,7 @@ export default function () {
     }
 
     return (
-        <>
+        <Layout>
             <Helmet>
                 <title>Home | Mateus Leonhardt</title>
                 <meta name="keywords" content="mateus leonhardt, leonhardt"/>
@@ -49,6 +50,6 @@ export default function () {
                     </div>
                 </div>
             </div>
-        </>
+        </Layout>
     );
 }

@@ -3,6 +3,7 @@ import { Form } from '@unform/web';
 import * as Yup from 'yup';
 import { Helmet } from 'react-helmet';
 
+import PageTitle from '../../components/PageTitle';
 import Input from '../../components/Form/Input';
 import Textarea from '../../components/Form/Textarea';
 import Recaptcha from '../../components/Form/Recaptcha';
@@ -58,10 +59,7 @@ export default function Contact() {
             </Helmet>
 
             <div id="contact">
-                <section className="page-title">
-                    <h2>Contato</h2>
-                    <span>Contato</span>
-                </section>
+                <PageTitle title="Contato" />
                 <p>Deixe-me uma mensagem e em breve entrarei em contato!</p>
 
                 <Form ref={formRef} onSubmit={handleSubmit}>

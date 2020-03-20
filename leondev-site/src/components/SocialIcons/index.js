@@ -1,13 +1,18 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { github, linkedin } from '../../data/site-data';
+import { social } from '../../../config/metadata';
 
 export default function SocialIcons(props) {
     return (
         <ul className={props.className}>
-            <li><a href={github} title="Github"><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
-            <li><a href={linkedin} title="Linkedin"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
+            { social.map(item => (
+                <li key={item.name}>
+                    <a href={item.url} title={item.name}>
+                        <FontAwesomeIcon icon={[item.icon.type, item.icon.name]} />
+                    </a>
+                </li>
+            ))}
         </ul>
     );
 }

@@ -11,6 +11,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -66,6 +67,13 @@ module.exports = {
       options: {
         name: "assets",
         path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "projects",
+        path: `${__dirname}/src/assets/projects`,
       },
     },
     `gatsby-plugin-offline`,

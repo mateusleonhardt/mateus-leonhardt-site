@@ -4,12 +4,38 @@ module.exports = {
   description: `Site pessoal de Mateus Leonhardt, um programador com mais de 7 anos com atuação no desenvolvimento de sistemas, sites corporativos e intranets utilizando plataformas como Microsoft Sharepoint, Microsoft .NET em C#, ASP.NET MVC, React, Wordpress e Angular.`,
   social: [
     {
-      name: 'github',
+      name: 'Github',
       url: 'https://github.com/mateusleonhardt/',
+      icon: {
+        type: 'fab',
+        name: 'github'
+      }
     },
     {
-      name: 'linkedin',
-      url: 'https://www.linkedin.com/in/mateusleonhardt/'
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/mateusleonhardt/',
+      icon: {
+            type: 'fab',
+            name: 'linkedin'
+      }
+    }
+  ],
+  menuLinks: [
+    {
+        "name": "home",
+        "link": "/"
+    },
+    {
+        "name": "about",
+        "link": "/about"
+    },
+    {
+        "name": "portfolio",
+        "link": "/portfolio"
+    },
+    {
+        "name": "contact",
+        "link": "/contact"
     }
   ],
   skills: [
@@ -122,7 +148,7 @@ module.exports = {
     {
         label: 'Symbol Idiomas',
         link: 'https://symbolidiomas.com.br/',
-        image: '/assets/symbol-idiomas.png',
+        image: 'symbol-idiomas.png',
         year: '2018',
         technologies: [
             {
@@ -138,7 +164,7 @@ module.exports = {
     {
         label: 'AJESC',
         link: 'http://ajesc.com.br/',
-        image: '/assets/ajesc.png',
+        image: 'ajesc.png',
         year: '2019',
         technologies: [
             {
@@ -154,7 +180,7 @@ module.exports = {
     {
         label: 'Praxis Medicina Ocupacional',
         link: 'https://praxismedicinaocupacional.com.br/',
-        image: '/assets/praxis.png',
+        image: 'praxis.png',
         year: '2019',
         technologies: [
             {

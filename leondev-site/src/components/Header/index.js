@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
-import { NavLink } from 'react-router-dom';
+//import { NavLink } from 'react-router-dom';
+import { Link } from "gatsby"
 
 import SocialIcons from '../SocialIcons';
 import MenuButton from '../MenuButton';
+
+import { menuLinks } from '../../../config/metadata';
 
 import './styles.css';
 
@@ -24,18 +27,11 @@ export default function Header(props) {
 
                 <div className={"main-menu " + (menuOpen ? "active" : '')}>
                     <ul className="menu-list">
-                        <li>
-                            <NavLink to="/" activeClassName="active" exact onClick={()=>{handleLinkClick();}}>Home</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/sobre" activeClassName="active" onClick={()=>{handleLinkClick();}}>Sobre</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/portfolio" activeClassName="active" onClick={()=>{handleLinkClick();}}>Portfolio</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/contato" activeClassName="active" onClick={()=>{handleLinkClick();}}>Contato</NavLink>
-                        </li>
+                        { menuLinks.map(item => (
+                            <li key={item.name}>
+                                <Link to={item.link} activeClassName="active" onClick={()=>{handleLinkClick();}}>{item.name}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 

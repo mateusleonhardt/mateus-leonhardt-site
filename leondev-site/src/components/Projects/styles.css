@@ -23,6 +23,7 @@
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
+    z-index: 1;
 }
 
 .project:hover:before {
@@ -59,6 +60,7 @@
     -o-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+    z-index: 2;
 }
 
 .project .info {
@@ -71,6 +73,7 @@
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+    z-index: 2;
 }
 
 .project .info h3 {
@@ -132,9 +135,10 @@
     right: 10px;
     transform: translateX(100%);
     transition: all .3s ease-out 0s;
+    z-index: 2;
 }
 
 .project:hover .delivered-on {
     transform: translateX(0);
-    opacity: 1;
+    opacity: 1;    
 }

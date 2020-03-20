@@ -1,14 +1,39 @@
 import React from 'react';
+import { useStaticQuery, graphql } from "gatsby";
+import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './styles.css';
 
-export default function Projects({data}) {
+export default function Projects({ projects }) {
+    const { allFile: { nodes }} = useStaticQuery (
+        graphql`
+            query ProjectsQuery{
+                allFile(filter: {relativeDirectory: {regex: "/projects/"}}) {
+                    nodes {
+                    childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid
+                            originalName
+                        }
+                    }
+                    }
+                }
+            }
+        `
+    )
+
+    const getImageUrl = (imgName) => {
+        const imgData = nodes.find(item => item.childImageSharp.fluid.originalName === imgName)
+        
+        return imgData.childImageSharp.fluid;
+    }
+
     return (
         <>
-            {data.map(project => (
+            {projects.map(project => (
                 <div className="project" key={project.label}>
-                    <img src={project.image} alt={project.label} />
+                    <Img fluid={getImageUrl(project.image)} />
                     <div className="language">
                         {project.technologies.map(technologie => (
                             <FontAwesomeIcon icon={[technologie.type, technologie.name]} key={technologie.name} />

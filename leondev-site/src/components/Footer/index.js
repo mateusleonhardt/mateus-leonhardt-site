@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SocialIcons from '../SocialIcons';
-import { name } from '../../data/site-data';
+import { title } from '../../../config/metadata';
 
 import './styles.css';
 
@@ -12,7 +12,7 @@ export default function Footer() {
         <footer id="main-footer">
             <SocialIcons className="social-icons" />
             <div className="copyright">
-                <h4>©{currentDate.getFullYear()} | Desenvolvido por {name} </h4>
+                <h4>©{currentDate.getFullYear()} | Desenvolvido por {title} </h4>
             </div>
         </footer>
     );
