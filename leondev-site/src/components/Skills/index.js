@@ -3,7 +3,7 @@ import React from 'react';
 import PageTitle from '../PageTitle';
 import ProgressBar from '../ProgressBar';
 
-import './styles.css';
+import './styles.scss';
 
 export default function Skills({data}) {
     return (

@@ -7,7 +7,7 @@ import Layout from '../../components/Layout';
 import PageTitle from '../../components/PageTitle';
 import Projects from '../../components/Projects';
 
-import { ProjectsList } from "./styles";
+import "./styles.scss";
 
 export default function Portfolio() {
     return (
@@ -20,9 +20,9 @@ export default function Portfolio() {
             <div id="portfolio">
                 <PageTitle title="Portfólio" />
 
-                <ProjectsList>
+                <div className="projects">
                     <Projects projects={projects} />
-                </ProjectsList>
+                </div>
             </div>
         </Layout>
     );

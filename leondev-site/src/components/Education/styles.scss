@@ -1,0 +1,86 @@
+.education {
+    margin: 0 0 20px;
+    position: relative;
+    width: 75%;
+
+    .info {
+        color: #32333C;
+        display: block;
+        position: relative;
+        text-decoration: none;
+        z-index: 1;
+
+        &:before {
+            background-color: #F7882F;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+            content: '';
+            height: calc(100% + 20px);
+            left: 0;
+            position: absolute;
+            right: auto;
+            top: 50%;
+            transform: translateY(-50%) rotateY(180deg);
+            width: 135px;
+            z-index: 1;
+        }
+    }
+
+    .icon {
+        border: 4px solid #fff;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 35px;
+        height: 70px;
+        left: 20px;
+        line-height: 66px;
+        position: absolute;
+        text-align: center;
+        text-shadow: 3px 3px 0 rgba(0,0,0,0.15);
+        transform: translateY(-50%);
+        right: auto;
+        top: 50%;
+        width: 70px;
+        z-index: 1;
+    }
+
+    .inner-info {
+        background-color: #d4d4d4;
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+        padding: 10px 30px 10px 145px;
+    }
+
+    .course {
+        font-size: 1.5rem;
+        margin: 0 0 7px 0;
+    }
+
+    .institution {
+        color: #687A8F;
+        font-size: 1rem;
+    }
+
+    .period {
+        background-color: #F7882F;
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 30px 10px 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    @media screen and (max-width: 1199px) {
+        width: 85%;
+    }
+
+    @media screen and (max-width: 991px) {
+        .inner-info {
+            padding: 10px 140px 10px 145px;
+        }
+    }
+} 
+
+
+

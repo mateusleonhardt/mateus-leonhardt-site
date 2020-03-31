@@ -5945,13 +5945,6 @@ gatsby-plugin-sitemap@^2.2.30:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-styled-components@^3.1.21:
-  version "3.1.21"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.1.21.tgz#d376464a762ae0acdd1e313e02c002eabc1aa4a6"
-  integrity sha512-uU4MtUAw3zazeVnKnOL0c0+mhtpNfEKee983jyUnAGZnXyXa9EYfZ7Lw+b++FqCce+e6EDlI7VemUR4voSD0DQ==
-  dependencies:
-    "@babel/runtime" "^7.8.7"
-
 gatsby-react-router-scroll@^2.1.23:
   version "2.1.23"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-2.1.23.tgz#ad58ec7b19f5100432c6d9f197503bd2facbd03e"

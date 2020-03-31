@@ -3,7 +3,7 @@ import React from 'react';
 import PageTitle from '../PageTitle';
 import ProgressBullet from '../ProgressBullet';
 
-import './styles.css';
+import './styles.scss';
 
 export default function Idioms({data}) {
     return (

@@ -1,0 +1,65 @@
+.bullet-item {
+    position: relative;
+    margin-top: 45px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    .name {
+        color: #32333C;
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 1rem;
+        position: relative;
+        margin: 0 0 9px;
+    }
+
+    .progress {
+        display: block;
+        height: 14px;
+        position: relative;
+        width: 100%;
+        background: transparent;
+
+        .percentage {
+            position: relative;
+            overflow: hidden;
+            left: 0;
+            top: 0;
+            height: 14px;
+            background: transparent;
+            z-index: 2;
+            -moz-transition: all 0.6s ease 0s;
+            -webkit-transition: all 0.6s ease 0s;
+            -o-transition: all 0.6s ease 0s;
+        }
+
+        .dg, .da {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 14px;
+
+            span {
+                display: block;
+                width: 14px;
+                height: 14px;
+                background: #687A8F;
+                -webkit-border-radius: 14px;
+                border-radius: 14px;
+            }
+        }
+
+        .da {
+            top: 0;
+        }
+
+        .da span {
+            background: #F7882F;
+        }
+    }
+}

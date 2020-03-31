@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import './styles.css';
+import './styles.scss';
 
 export default function ProgressBullet({data}) {
     const ref = useRef(null);

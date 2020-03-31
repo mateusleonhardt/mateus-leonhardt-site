@@ -1,6 +1,4 @@
-import styled from 'styled-components';
-
-export const ProjectsList = styled.div`
+.projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -9,4 +7,5 @@ export const ProjectsList = styled.div`
     @media screen and (max-width: 991px) {
         grid-template-columns: 1fr;
     }
-`;
+}
+

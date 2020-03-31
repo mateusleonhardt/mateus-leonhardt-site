@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import PageTitle from '../PageTitle';
 
-import './styles.css';
+import './styles.scss';
 
 export default function Education({data}) {
     return (

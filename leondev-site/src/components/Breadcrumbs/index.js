@@ -1,7 +1,7 @@
 import React from 'react';
 //import { Link, Route } from 'react-router-dom';
 
-import './styles.css'
+import './styles.scss'
 
 export default function Breadcrumbs({props}) {
     const Breadcrumbs = () => (

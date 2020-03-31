@@ -1,0 +1,14 @@
+.idioms {
+    width: 50%;
+
+    @media screen and (max-width: 1199px) {
+        width: 75%;
+    }
+
+    @media screen and (max-width: 991px) {
+        width: 100%;
+    }
+}
+
+
+

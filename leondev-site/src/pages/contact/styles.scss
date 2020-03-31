@@ -1,0 +1,66 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin: -79px auto 0;
+    max-width: 500px;
+    width: 100%;
+
+    form {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 0 15px;
+
+        &:focus {
+            border: 1px solid #F7882F;
+        }
+    }
+
+    input {
+        color: #32333C;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    textarea {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .input-block {
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 12px 0 0 15px;
+        transition: all 500ms;
+        opacity: 0.5;
+    }
+
+    input:focus + label,
+    textarea:focus + label,
+    input:valid + label,
+    textarea:valid + label {
+        color: #F7882F;
+        font-size: 85%;
+        padding-left: 0;
+        padding-bottom: 2px;
+        transform: translate3d(0, -100%, 0);
+        opacity: 1;
+    }
+
+    .recaptcha {
+        margin-bottom: 15px;
+    }
+}

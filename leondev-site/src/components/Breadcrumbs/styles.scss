@@ -1,0 +1,23 @@
+.breadcrumbs {
+    text-transform: capitalize;
+
+    li {
+        display: inline-block;
+        padding: 15px 0;
+
+        a {
+            color: #F7882F;
+            text-decoration: none;
+        }
+    }
+
+    .breadcrumb-active{
+        color: #687A8F;
+        &:before {
+            color: #32333C;
+            content: ' / ';
+            display: inline-block;
+            padding: 0 5px;
+        }
+    }
+}

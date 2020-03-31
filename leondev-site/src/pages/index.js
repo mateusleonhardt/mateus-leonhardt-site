@@ -6,6 +6,8 @@ import { Helmet } from 'react-helmet';
 import { title } from '../../config/metadata';
 import Layout from '../components/Layout';
 
+import './styles.scss'
+
 export default function () {
     const getImage = () => {
             return <StaticQuery 

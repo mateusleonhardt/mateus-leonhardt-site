@@ -7,7 +7,7 @@ import MenuButton from '../MenuButton';
 
 import { menuLinks } from '../../../config/metadata';
 
-import './styles.css';
+import './styles.scss';
 
 export default function Header(props) {
     const [menuOpen, setMenuOpen] = useState(false);

@@ -81,7 +81,7 @@ p {
 }
 
 #___gatsby::before {
-  background-color: rgb(104, 122, 143, 0.03);
+  background-color: rgba(104, 122, 143, 0.03);
   content: '';
   height: auto;
   position: absolute;
@@ -99,6 +99,21 @@ p {
   position: relative;
   width: 100%;
   z-index: 50;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 960px;
+  }
+  
+  @media screen and (max-width: 991px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 720px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 #about .page-title,
@@ -122,11 +137,11 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s ease-out 0s;
-}
 
-.main-btn:hover {
-  background-color: #fff;
-  color: #F7882F;
+  &:hover {
+    background-color: #fff;
+    color: #F7882F;
+  }
 }
 
 .error {
@@ -134,25 +149,4 @@ p {
   display: block;
   padding-top: 5px;
   padding-left: 5px;
-}
-
-@media screen and (max-width: 1199px) {
-  .content {
-    max-width: 960px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .content {
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 720px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .content {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }

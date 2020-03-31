@@ -8,7 +8,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 //import Breadcrumbs from '../Breadcrumbs';
 
-import './global.css';
+import './global.scss';
 
 export default function Layout({ children }) {
     library.add(fab, fas);

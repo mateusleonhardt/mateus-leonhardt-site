@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import './styles.css';
+import './styles.scss';
 
 export default function Projects({ projects }) {
     const { allFile: { nodes }} = useStaticQuery (

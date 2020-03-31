@@ -3,7 +3,7 @@ import React from 'react';
 import SocialIcons from '../SocialIcons';
 import { title } from '../../../config/metadata';
 
-import './styles.css';
+import './styles.scss';
 
 export default function Footer() {
     var currentDate = new Date();

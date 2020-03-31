@@ -48,12 +48,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        displayName: process.env.NODE_ENV !== 'production',
-      },
-    },
-    {
       resolve: `gatsby-plugin-page-creator`,
       options: {
         path: `${__dirname}/src/pages`,
@@ -76,6 +70,7 @@ module.exports = {
         path: `${__dirname}/src/assets/projects`,
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-offline`,
   ]
 }

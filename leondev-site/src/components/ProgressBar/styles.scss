@@ -1,13 +1,13 @@
 .box {
     position: relative;
-}
 
-.box .name {
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 37px;
-    margin-left: 12px;
-    position: absolute;
+    .name {
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 37px;
+        margin-left: 12px;
+        position: absolute;
+    }
 }
 
 .progress {
