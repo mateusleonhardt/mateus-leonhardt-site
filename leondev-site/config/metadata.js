@@ -22,19 +22,19 @@ module.exports = {
   ],
   menuLinks: [
     {
-        "name": "home",
+        "name": "Home",
         "link": "/"
     },
     {
-        "name": "about",
+        "name": "Sobre",
         "link": "/about"
     },
     {
-        "name": "portfolio",
+        "name": "Portfólio",
         "link": "/portfolio"
     },
     {
-        "name": "contact",
+        "name": "Contato",
         "link": "/contact"
     }
   ],
