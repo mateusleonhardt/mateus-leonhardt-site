@@ -7,8 +7,6 @@
   Font: #32333C
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-
 *{
   margin: 0;
   padding: 0;
@@ -113,6 +111,25 @@ p {
   @media screen and (max-width: 767px) {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+.breadcrumb {
+  text-transform: capitalize;
+
+  li {
+      display: inline-block;
+      padding: 15px 1.5px;
+
+      a {
+          color: #F7882F;
+          text-decoration: none;
+      }
+  }
+
+  .breadcrumb__link__active, 
+  .breadcrumb__separator {
+    color: #687A8F;
   }
 }
 

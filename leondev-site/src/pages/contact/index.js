@@ -11,7 +11,7 @@ import Recaptcha from '../../components/Form/Recaptcha';
 
 import "./styles.scss";
 
-export default function Contact() {
+export default function Contact({ pageContext }) {
     const formRef = useRef(null);
 
     async function handleSubmit(data, { reset }) {
@@ -53,7 +53,7 @@ export default function Contact() {
     }
 
     return (
-        <Layout>
+        <Layout context={pageContext} crumbLabel="Contato">
             <Helmet>
                 <title>Contato | Mateus Leonhardt</title>
                 <meta name="keywords" content="mateus leonhardt, leonhardt, contato, fale conosco"/>

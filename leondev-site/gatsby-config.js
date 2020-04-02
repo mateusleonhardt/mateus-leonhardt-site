@@ -12,6 +12,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -70,7 +72,15 @@ module.exports = {
         path: `${__dirname}/src/assets/projects`,
       },
     },
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        useAutoGen: true,
+        exclude: [
+          `/404`,
+        ],
+     }
+    },
     `gatsby-plugin-offline`,
   ]
 }

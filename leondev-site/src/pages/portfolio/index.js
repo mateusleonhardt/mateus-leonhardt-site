@@ -9,9 +9,9 @@ import Projects from '../../components/Projects';
 
 import "./styles.scss";
 
-export default function Portfolio() {
+export default function Portfolio({ pageContext }) {
     return (
-        <Layout>
+        <Layout context={pageContext} crumbLabel="Portfólio">
             <Helmet>
                 <title>Portfólio | Mateus Leonhardt</title>
                 <meta name="keywords" content="mateus leonhardt, leonhardt, portfólios, projetos, sites, aplicativos,"/>

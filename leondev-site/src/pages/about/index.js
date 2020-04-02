@@ -10,9 +10,9 @@ import Idioms from '../../components/Idioms';
 import Experiences from '../../components/Experiences';
 import Education from '../../components/Education';
 
-export default function About() {
+export default function About({ pageContext }) {
     return (
-        <Layout>
+        <Layout context={pageContext} crumbLabel="Sobre mim">
             <Helmet>
                 <title>Sobre mim | Mateus Leonhardt</title>
                 <meta name="keywords" content="mateus leonhardt, leonhardt, sobre, sobre mim, websites, sistemas, c#, asp.net mvc,"/>

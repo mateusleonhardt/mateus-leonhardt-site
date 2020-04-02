@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 
 import './styles.scss'
 
-export default function () {
+export default function ({ pageContext }) {
     const getImage = () => {
             return <StaticQuery 
                 query={graphql`
@@ -32,7 +32,7 @@ export default function () {
     }
 
     return (
-        <Layout>
+        <Layout context={pageContext} crumbLabel="Home">
             <Helmet>
                 <title>Home | Mateus Leonhardt</title>
                 <meta name="keywords" content="mateus leonhardt, leonhardt"/>
