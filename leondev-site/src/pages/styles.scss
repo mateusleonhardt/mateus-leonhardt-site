@@ -1,3 +1,5 @@
+@import '../styles/theme-color.scss';
+
 #home {
     display: flex;
     flex-direction: column;
@@ -13,7 +15,7 @@
     }
 
     .photo {
-        border: 5px solid #F7882F;
+        border: 5px solid $primary-color;
         border-radius: 50%;
         height: 250px;
         margin: auto;
@@ -35,13 +37,13 @@
     }
 
     .sub-title {
-        color: #F7882F;
+        color: $primary-color;
         font-size: 30px;
         padding-bottom: 15px;
     }
 
     .title {
-        color: #32333c;
+        color: $primary-font-color;
         font-size: 60px;
         padding-bottom: 15px;
     }
@@ -50,7 +52,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 28px;
-        color: #8a8fa3;
+        color: $secondary-color;
         margin: 0px;
         padding-bottom: 40px;
     }

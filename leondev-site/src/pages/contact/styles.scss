@@ -1,3 +1,5 @@
+@import '../../styles/theme-color.scss';
+
 #contact {
     display: flex;
     flex-direction: column;
@@ -19,12 +21,12 @@
         padding: 0 15px;
 
         &:focus {
-            border: 1px solid #F7882F;
+            border: 1px solid $primary-color;
         }
     }
 
     input {
-        color: #32333C;
+        color: $primary-font-color;
         height: 42px;
         font-size: 14px;
     }
@@ -52,7 +54,7 @@
     textarea:focus + label,
     input:valid + label,
     textarea:valid + label {
-        color: #F7882F;
+        color: $primary-color;
         font-size: 85%;
         padding-left: 0;
         padding-bottom: 2px;

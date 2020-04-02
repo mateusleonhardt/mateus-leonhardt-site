@@ -1,3 +1,5 @@
+@import '../../styles/theme-color.scss';
+
 .page-title {
     position: relative;
     margin: 90px 0 45px;
@@ -19,7 +21,7 @@
 
         &::after {
             width: 35px;
-            background: #F7882F;
+            background: $primary-color;
         }
 
         &::before {

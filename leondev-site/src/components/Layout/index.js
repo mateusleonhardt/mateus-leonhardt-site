@@ -8,7 +8,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import Header from '../Header';
 import Footer from '../Footer';
 
-import './global.scss';
+import '../../styles/global.scss';
 
 export default function Layout({ children, crumbLabel, context }) {
     library.add(fab, fas);

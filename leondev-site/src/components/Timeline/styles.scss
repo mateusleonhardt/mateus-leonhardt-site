@@ -1,3 +1,5 @@
+@import '../../styles/theme-color.scss';
+
 #timeline {
     width: 100%;
     margin: 0 auto;
@@ -11,7 +13,7 @@
         content: "";
         width: 3px;
         height: 100%;
-        background: #687A8F;
+        background: $secondary-color;
         left: 50%;
         top: 0;
         position: absolute;
@@ -36,7 +38,7 @@
         }
 
         .timeline-period {
-            background: #687A8F;
+            background: $secondary-color;
             width: 50px;
             height: 50px;
             position: absolute;
@@ -50,7 +52,7 @@
             border-radius: 50%;
 
             span {
-                color: #fff;
+                color: $secondary-font-color;
                 font-weight: bold;
                 left: 50%;
                 position: absolute;
@@ -61,20 +63,20 @@
 
         &.present {
             .timeline-period {
-                background: #F7882F;
+                background: $primary-color;
             }
 
             .timeline-content {
                 &:before {
-                    border-left-color: #F7882F;
+                    border-left-color: $primary-color;
                 }
 
                 h3 {
-                    background: #F7882F;
+                    background: $primary-color;
                 }
 
                 h6 {
-                    color: #F7882F;
+                    color: $primary-color;
                 }
             }
         }
@@ -105,7 +107,7 @@
                 height: 0;
                 border-top: 7px solid transparent;
                 border-bottom: 7px solid transparent;
-                border-left: 7px solid #687A8F;
+                border-left: 7px solid $secondary-color;
             }
 
             &.right {
@@ -116,14 +118,14 @@
                     right: 45%;
                     left: inherit;
                     border-left: 0;
-                    border-right: 7px solid #687A8F;
+                    border-right: 7px solid $secondary-color;
                 }
             }
 
             h3 {
                 padding: 15px;
-                background: #687A8F;
-                color: #fff;
+                background: $secondary-color;
+                color: $secondary-font-color;
                 margin: -20px -20px 0 -20px;
                 font-size: 1.3rem;
                 font-weight: 300;
@@ -134,7 +136,7 @@
             }
 
             h6 {
-                color: #687A8F;
+                color: $secondary-color;
                 font-size: .9rem;
                 margin-top: 5px;
                 text-align: right;
@@ -165,12 +167,12 @@
                     left: 10%;
                     margin-left: -6px;
                     border-left: 0;
-                    border-right: 7px solid #687A8F;
+                    border-right: 7px solid $secondary-color;
                 }
             }
 
             &.present .timeline-content:before {
-                border-right-color: #F7882F;
+                border-right-color: $primary-color;
             }
 
             .timeline-period {

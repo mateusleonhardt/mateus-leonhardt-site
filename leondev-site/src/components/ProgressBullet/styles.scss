@@ -1,3 +1,5 @@
+@import '../../styles/theme-color.scss';
+
 .bullet-item {
     position: relative;
     margin-top: 45px;
@@ -7,7 +9,7 @@
     }
 
     .name {
-        color: #32333C;
+        color: $primary-font-color;
         font-size: 1.2rem;
         font-weight: bold;
         line-height: 1rem;
@@ -48,7 +50,7 @@
                 display: block;
                 width: 14px;
                 height: 14px;
-                background: #687A8F;
+                background: $secondary-color;
                 -webkit-border-radius: 14px;
                 border-radius: 14px;
             }
@@ -59,7 +61,7 @@
         }
 
         .da span {
-            background: #F7882F;
+            background: $primary-color;
         }
     }
 }

@@ -1,3 +1,5 @@
+@import '../../styles/theme-color.scss';
+
 #main-footer {
     padding: 45px 0 15px;
     position: relative;
@@ -10,7 +12,7 @@
         content: '';
         width: 100%;
         height: 2px;
-        background-color: #F7882F;
+        background-color: $primary-color;
         left: -102.5%;
         top: 65%;
         -webkit-transform: translateY(-65%);
@@ -51,9 +53,9 @@
                 text-align: center;
 
                 &:hover {
-                    color: #fff;
-                    background-color: #F7882F;
-                    border-color: #F7882F;
+                    color: $secondary-font-color;
+                    background-color: $primary-color;
+                    border-color: $primary-color;
                 }
             }
         }
@@ -66,7 +68,7 @@
         transform: translateY(-65%);
 
         h4 {
-            color: #32333c;
+            color: $primary-font-color;
             font-size: 1rem;
             font-weight: normal;
         }
@@ -118,7 +120,7 @@
             content: '';
             width: 100%;
             height: 2px;
-            background-color: #F7882F;
+            background-color: $primary-color;
             right: -65.5%;
             top: 45%;
             transform: translateY(-45%);

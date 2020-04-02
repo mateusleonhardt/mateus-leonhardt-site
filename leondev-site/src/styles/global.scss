@@ -1,11 +1,4 @@
-/*
- Paleta de cores:
-  Blueberry: #687A8F
-  Apricot: #F7882F
-  Citrus: #F7C331
-  Apple Core: #DCC7AA
-  Font: #32333C
-*/
+@import './theme-color.scss';
 
 *{
   margin: 0;
@@ -36,17 +29,17 @@ ul, ol {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  color: #F7882F;
+  color: $primary-color;
   margin: 0;
   position: relative;
 }
 
 strong {
-  color: #F7882F;
+  color: $primary-color;
 }
 
 p {
-  color: #32333c;
+  color: $primary-font-color;
   text-align: justify;
 }
 
@@ -75,7 +68,7 @@ p {
 }
 
 #___gatsby {
-  background-image: url("../../assets/interlaced.png");
+  background-image: url("../assets/interlaced.png");
 }
 
 #___gatsby::before {
@@ -122,14 +115,14 @@ p {
       padding: 15px 1.5px;
 
       a {
-          color: #F7882F;
+          color: $primary-color;
           text-decoration: none;
       }
   }
 
   .breadcrumb__link__active, 
   .breadcrumb__separator {
-    color: #687A8F;
+    color: $secondary-color;
   }
 }
 
@@ -139,13 +132,13 @@ p {
 }
 
 .main-btn {
-  background-color: #F7882F;
-  border: 1px solid #F7882F;
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
   border-radius: 50px;
   -webkit-box-shadow: 0px 5px 8px 0px rgba(247, 136, 47, 0.55);
   -moz-box-shadow: 0px 5px 8px 0px rgba(247, 136, 47, 0.55);
   box-shadow: 0px 5px 8px 0px rgba(247, 136, 47, 0.55);
-  color: #fff;
+  color: $secondary-font-color;
   display: inline-block;
   font-size: 15px;
   font-weight: bold;
@@ -157,12 +150,12 @@ p {
 
   &:hover {
     background-color: #fff;
-    color: #F7882F;
+    color: $primary-color;
   }
 }
 
 .error {
-  color: #ff0000;
+  color: $error;
   display: block;
   padding-top: 5px;
   padding-left: 5px;
