@@ -60,12 +60,16 @@ module.exports = {
         level: 4,
     },
     {
+        label: 'GatsbyJS',
+        level: 5,
+    },
+    {
         label: 'Git',
-        level: 4,
+        level: 5,
     },
     {
         label: 'Google Analytics',
-        level: 3.5,
+        level: 3.7,
     },
     {
         label: 'HTML & CSS',
@@ -77,7 +81,7 @@ module.exports = {
     },
     {
         label: 'Node.js',
-        level: 2.5,
+        level: 4,
     },
     {
         label: 'PHP',
@@ -85,15 +89,15 @@ module.exports = {
     },
     {
         label: 'ReactJS',
-        level: 3.5,
+        level: 5,
     },
     {
         label: 'React Native',
-        level: 3.5,
+        level: 4,
     },
     {
         label: 'SASS',
-        level: 4,
+        level: 5,
     },
     {
         label: 'Spring',
