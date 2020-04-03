@@ -2,9 +2,9 @@
   Mateus Leonhardt
 </h1>
 
-<p>Site desenvolvido utilizando Gatsby</p>
+<p align="center">Site desenvolvido utilizando Gatsby</p>
 
-## 🚀 Quick Start
+## 🚀 Ínicio rápido
 
 1. Clone o projeto.
 2. Certifique-se que tenha o NPM instalado na sua máquina.
