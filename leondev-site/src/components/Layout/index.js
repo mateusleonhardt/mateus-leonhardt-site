@@ -27,7 +27,7 @@ export default function Layout({ children, crumbLabel, context }) {
 
             <Header />        
             <div className="content">
-                { crumbLabel !== "Home" ? <Breadcrumb
+                { crumbLabel !== "Home" && crumbLabel !== "404" ? <Breadcrumb
                     crumbs={crumbs}
                     crumbSeparator=" / "
                     crumbLabel={crumbLabel}

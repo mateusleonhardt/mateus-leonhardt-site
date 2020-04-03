@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from "gatsby";
+import { Link, StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import { Helmet } from 'react-helmet';
 
@@ -48,7 +48,7 @@ export default function ({ pageContext }) {
                         <h4 className="sub-title">Olá, Eu sou</h4>
                         <h1 className="title">Mateus Leonhardt</h1>
                         <p>Desenvolvedor Web &amp; Mobile</p>
-                        <a className="main-btn" href="/portfolio">Veja meu trabalho</a>
+                        <Link className="main-btn" to="/portfolio">Veja meu trabalho</Link>
                     </div>
                 </div>
             </div>
