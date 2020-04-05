@@ -21,7 +21,7 @@ export default function About({ pageContext }) {
             <div id="about">
                 <PageTitle title="Sobre mim" />
                 <p>Olá! Quer saber mais sobre mim?!</p>
-                <p>Sou formado em Ciência da Computação e um programador com mais de 7 anos com atuação no desenvolvimento 
+                <p>Formado em Ciência da Computação e um programador com mais de 7 anos de atuação com desenvolvimento 
                     de sistemas, sites corporativos e intranets utilizando plataformas como Microsoft Sharepoint, 
                     Microsoft .NET em C#, ASP.NET MVC, React, Wordpress e Angular. Tenho interesse em estar sempre 
                     aprendendo novas tecnologias, aprimorando os conhecimentos que já possuo e sempre que possível 

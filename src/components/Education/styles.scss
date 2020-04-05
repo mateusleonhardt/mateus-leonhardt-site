@@ -78,8 +78,18 @@
     }
 
     @media screen and (max-width: 991px) {
+        width: 90%;
+        
         .inner-info {
             padding: 10px 140px 10px 145px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+
+        .inner-info {
+            padding: 50px 40px 20px 145px;
         }
     }
 } 
