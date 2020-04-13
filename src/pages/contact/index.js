@@ -33,12 +33,7 @@ export default function Contact({ pageContext }) {
                 abortEarly: false,
             })
 
-            alert("Obrigado, em breve estarei entrando em contato com você!")
-
             formRef.current.setErrors({});
-
-            window.grecaptcha.reset();
-            reset();
         } catch (err) {
             if (err instanceof Yup.ValidationError) {
                 const errorMessages = {};
@@ -64,6 +59,7 @@ export default function Contact({ pageContext }) {
                 <p>Deixe-me uma mensagem e em breve entrarei em contato!</p>
 
                 <Form ref={formRef} 
+                    action="/success"
                     onSubmit={handleSubmit} 
                     name="contact" 
                     data-netlify="true" 
