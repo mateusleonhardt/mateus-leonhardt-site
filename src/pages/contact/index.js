@@ -34,7 +34,6 @@ export default function Contact({ pageContext }) {
             })
 
             formRef.current.setErrors({});
-            document.contact.submit();
 
         } catch (err) {
             if (err instanceof Yup.ValidationError) {
