@@ -14,7 +14,7 @@ import "./styles.scss";
 export default function Contact({ pageContext }) {
     const formRef = useRef(null);
 
-    async function handleSubmit(e) {
+    async function handleSubmit(data) {
         try{
             const schema = Yup.object().shape({
                 user_name: Yup.string()
@@ -29,12 +29,11 @@ export default function Contact({ pageContext }) {
                     .nullable()
             });
 
-            await schema.validate(e, {
+            await schema.validate(data, {
                 abortEarly: false,
             })
 
             formRef.current.setErrors({});
-            e.target.submit();
         } catch (err) {
             if (err instanceof Yup.ValidationError) {
                 const errorMessages = {};
@@ -45,6 +44,8 @@ export default function Contact({ pageContext }) {
 
                 formRef.current.setErrors(errorMessages);
             }
+
+            console.log(err);
         }
     }
 
