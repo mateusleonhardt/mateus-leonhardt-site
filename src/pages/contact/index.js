@@ -63,7 +63,7 @@ export default function Contact({ pageContext }) {
                 <PageTitle title="Contato" />
                 <p>Deixe-me uma mensagem e em breve entrarei em contato!</p>
 
-                <Form ref={formRef} onSubmit={handleSubmit} data-netlify="true" method="POST">
+                <Form ref={formRef} onSubmit={handleSubmit} name="contact" data-netlify="true" method="POST">
                     <Input name="user_name" label="Nome*" required />
                     <Input name="email" label="E-mail*" type="email" required />
                     <Textarea name="message" label="Mensagem*" rows="10" required />
