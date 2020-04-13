@@ -17,6 +17,7 @@ export default function Textarea({ name, rows, label, ...rest }) {
         <div className="input-block">
             <textarea 
                 id={fieldName}
+                name={fieldName}
                 ref={inputRef}
                 rows={rows} 
                 defaultValue={defaultValue} 

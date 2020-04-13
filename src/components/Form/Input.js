@@ -17,8 +17,9 @@ export default function Input({ name, label, ...rest }) {
         <div className="input-block">
             <input 
                 id={fieldName}
+                name={fieldName} 
                 ref={inputRef} 
-                defaultValue={defaultValue} 
+                defaultValue={defaultValue}
                 {...rest} 
             />
 
