@@ -10,6 +10,42 @@
     min-height: 100vh;
     width: 100%;
 
+    /* Temporary CSS */
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    .mail-to {
+        border-radius: 50%;
+        background-color: $primary-color;
+        color: $secondary-font-color;
+        display: block;
+        font-size: 30px;
+        height: 50px;
+        line-height: 54px;
+        margin: 0 auto;
+        width: 50px;
+        text-align: center;
+
+        &:hover {
+            -webkit-animation-name: hvr-bob-float, hvr-bob;
+            animation-name: hvr-bob-float, hvr-bob;
+            -webkit-animation-duration: .3s, 1.5s;
+            animation-duration: .3s, 1.5s;
+            -webkit-animation-delay: 0s, .3s;
+            animation-delay: 0s, .3s;
+            -webkit-animation-timing-function: ease-out, ease-in-out;
+            animation-timing-function: ease-out, ease-in-out;
+            -webkit-animation-iteration-count: 1, infinite;
+            animation-iteration-count: 1, infinite;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-direction: normal, alternate;
+            animation-direction: normal, alternate;            
+        }
+    }
+    /* Temporary CSS */
+
     form {
         margin-top: 15px;
         width: 100%;
@@ -67,3 +103,54 @@
         margin-bottom: 15px;
     }
 }
+
+/* Temporary CSS */
+/* Bob */
+@-webkit-keyframes hvr-bob {
+    0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+  
+@keyframes hvr-bob {
+    0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+@-webkit-keyframes hvr-bob-float {
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+    
+@keyframes hvr-bob-float {
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+/* Temporary CSS */

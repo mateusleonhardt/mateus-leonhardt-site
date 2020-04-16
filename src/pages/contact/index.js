@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
 import { Helmet } from 'react-helmet';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Layout from '../../components/Layout';
 import PageTitle from '../../components/PageTitle';
@@ -59,9 +60,15 @@ export default function Contact({ pageContext }) {
 
             <div id="contact">
                 <PageTitle title="Contato" />
-                <p>Deixe-me uma mensagem e em breve entrarei em contato!</p>
+                {/* <p>Deixe-me uma mensagem e em breve entrarei em contato!</p> */}
 
-                <Form ref={formRef} 
+                <h2>Formulário em Manutenção</h2>
+                <p>Enquanto o formulário não volta, você pode me enviar um e-mail <strong>clicando no icone de envelope</strong> e assim que possível lhe retornarei. Obrigado!</p>
+                <a className="mail-to" href="mailto:mateus.leonhardt@gmail.com" title="Enviar e-mail">
+                    <FontAwesomeIcon icon={['fas', 'envelope']} />
+                </a>
+
+                {/* <Form ref={formRef} 
                     action="/success"
                     onSubmit={handleSubmit} 
                     name="contact" 
@@ -77,7 +84,7 @@ export default function Contact({ pageContext }) {
                     <Recaptcha name="recaptcha" />
 
                     <button className="main-btn" type="submit">Enviar mensagem</button>
-                </Form>
+                </Form> */}
             </div>
         </Layout>
     );
