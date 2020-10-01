@@ -5,9 +5,8 @@ import ReCAPTCHA from 'react-google-recaptcha';
 export default function Input({ name, ...rest }) {
     const inputRef = useRef(null);
     const { fieldName, registerField, defaultValue, error} = useField(name);
-    const site_key = window.location.hostname.indexOf("localhost") != -1 
-                        ? "6LcNqtoUAAAAAKeLBEmYpOmGD1Xo7g_XwcIpFHbn" 
-                        : "6LfGyeYUAAAAAIeeVBQwqIgEuwAFNqsV95f6mL5V";
+    //const site_key = "6LcNqtoUAAAAAKeLBEmYpOmGD1Xo7g_XwcIpFHbn";
+    const site_key = "6LfGyeYUAAAAAIeeVBQwqIgEuwAFNqsV95f6mL5V"; //Prod
     
     useEffect(() => {
        registerField({
