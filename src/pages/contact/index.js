@@ -17,7 +17,7 @@ export default function Contact({ pageContext }) {
 
     async function handleSubmit(data, { reset }, event) {
         try{
-            event.persist();
+            //event.persist();
 
             // const schema = Yup.object().shape({
             //     user_name: Yup.string()
@@ -36,10 +36,10 @@ export default function Contact({ pageContext }) {
             //     abortEarly: false,
             // })
 
-            formRef.current.setErrors({});
+            //formRef.current.setErrors({});
             
-            event.target.submit();
-
+            //event.target.submit();
+            console.log('success');
         } catch (err) {
             if (err instanceof Yup.ValidationError) {
                 const errorMessages = {};
