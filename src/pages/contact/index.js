@@ -33,7 +33,7 @@ export default function Contact({ pageContext }) {
             schema.validate(data, {
                 abortEarly: false,
             })
-
+            debugger;
             formRef.current.setErrors({});
             
             event.target.submit();
