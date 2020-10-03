@@ -19,22 +19,22 @@ export default function Contact({ pageContext }) {
         try{
             event.persist();
 
-            const schema = Yup.object().shape({
-                user_name: Yup.string()
-                    .required('Por favor, insira um nome'),
-                email: Yup.string()
-                    .email('Por favor, insira um e-mail válido')
-                    .required('Por favor, insira um e-mail'),
-                message: Yup.string()
-                    .required('Por favor, insira uma mensagem'),
-                recaptcha: Yup.string()
-                    .required('Por favor, marque o reCAPTCHA')
-                    .nullable()
-            });
+            // const schema = Yup.object().shape({
+            //     user_name: Yup.string()
+            //         .required('Por favor, insira um nome'),
+            //     email: Yup.string()
+            //         .email('Por favor, insira um e-mail válido')
+            //         .required('Por favor, insira um e-mail'),
+            //     message: Yup.string()
+            //         .required('Por favor, insira uma mensagem'),
+            //     recaptcha: Yup.string()
+            //         .required('Por favor, marque o reCAPTCHA')
+            //         .nullable()
+            // });
 
-            await schema.validate(data, {
-                abortEarly: false,
-            })
+            // await schema.validate(data, {
+            //     abortEarly: false,
+            // })
 
             formRef.current.setErrors({});
             
