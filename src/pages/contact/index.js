@@ -17,29 +17,30 @@ export default function Contact({ pageContext }) {
 
     async function handleSubmit(data, { reset }, event) {
         try{
-            //event.persist();
-
-            // const schema = Yup.object().shape({
-            //     user_name: Yup.string()
-            //         .required('Por favor, insira um nome'),
-            //     email: Yup.string()
-            //         .email('Por favor, insira um e-mail válido')
-            //         .required('Por favor, insira um e-mail'),
-            //     message: Yup.string()
-            //         .required('Por favor, insira uma mensagem'),
-            //     recaptcha: Yup.string()
-            //         .required('Por favor, marque o reCAPTCHA')
-            //         .nullable()
-            // });
-
-            // await schema.validate(data, {
-            //     abortEarly: false,
-            // })
-
-            //formRef.current.setErrors({});
+            event.persist();
+            event.preventDefault();
             
-            //event.target.submit();
-            console.log('success');
+            const schema = Yup.object().shape({
+                user_name: Yup.string()
+                    .required('Por favor, insira um nome'),
+                email: Yup.string()
+                    .email('Por favor, insira um e-mail válido')
+                    .required('Por favor, insira um e-mail'),
+                message: Yup.string()
+                    .required('Por favor, insira uma mensagem'),
+                recaptcha: Yup.string()
+                    .required('Por favor, marque o reCAPTCHA')
+                    .nullable()
+            });
+
+            await schema.validate(data, {
+                abortEarly: false,
+            })
+
+            formRef.current.setErrors({});
+            
+            event.target.submit();
+
         } catch (err) {
             if (err instanceof Yup.ValidationError) {
                 const errorMessages = {};
