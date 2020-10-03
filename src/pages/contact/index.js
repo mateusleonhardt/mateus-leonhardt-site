@@ -16,6 +16,7 @@ export default function Contact({ pageContext }) {
     const formRef = useRef(null);
 
     function handleSubmit(data, { reset }, event) {
+        debugger;
         try{
             const schema = Yup.object().shape({
                 user_name: Yup.string()
@@ -32,8 +33,8 @@ export default function Contact({ pageContext }) {
 
             schema.validate(data, {
                 abortEarly: false,
-            })
-            debugger;
+            });
+
             formRef.current.setErrors({});
             
             event.target.submit();
