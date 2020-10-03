@@ -15,9 +15,10 @@ import "./styles.scss";
 export default function Contact({ pageContext }) {
     const formRef = useRef(null);
 
-    function handleSubmit(data, { reset }, event) {
-        debugger;
+    async function handleSubmit(data, { reset }, event) {
         try{
+            event.persist();
+
             const schema = Yup.object().shape({
                 user_name: Yup.string()
                     .required('Por favor, insira um nome'),
@@ -31,9 +32,9 @@ export default function Contact({ pageContext }) {
                     .nullable()
             });
 
-            schema.validate(data, {
+            await schema.validate(data, {
                 abortEarly: false,
-            });
+            })
 
             formRef.current.setErrors({});
             
