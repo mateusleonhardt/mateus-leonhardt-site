@@ -151,7 +151,7 @@ module.exports = {
   projects: [
     {
         label: 'Symbol Idiomas',
-        link: 'https://symbolidiomas.com.br/',
+        link: '',
         image: 'symbol-idiomas.png',
         year: '2018',
         technologies: [
@@ -186,6 +186,22 @@ module.exports = {
         link: 'https://praxismedicinaocupacional.com.br/',
         image: 'praxis.png',
         year: '2019',
+        technologies: [
+            {
+                type: 'fab',
+                name: 'html5'
+            },
+            {
+                type: 'fab',
+                name: 'wordpress'
+            }
+        ]
+    },
+    {
+        label: 'Clínica Imuniza',
+        link: 'https://clinicaimuniza.com.br/',
+        image: 'imuniza.png',
+        year: '2020',
         technologies: [
             {
                 type: 'fab',

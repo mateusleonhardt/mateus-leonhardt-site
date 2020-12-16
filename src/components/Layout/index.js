@@ -4,6 +4,7 @@ import { Breadcrumb } from 'gatsby-plugin-breadcrumb'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import SimpleReactLightbox from 'simple-react-lightbox';
 
 import Header from '../Header';
 import Footer from '../Footer';
@@ -25,15 +26,17 @@ export default function Layout({ children, crumbLabel, context }) {
                             Microsoft .NET em C#, ASP.NET MVC, React, Wordpress e Angular." />
             </Helmet>
 
-            <Header />        
-            <div className="content">
-                { crumbLabel !== "Home" && crumbLabel !== "404" ? <Breadcrumb
-                    crumbs={crumbs}
-                    crumbSeparator=" / "
-                    crumbLabel={crumbLabel}
-                /> : null }
-                {children}
-            </div>
+            <Header />   
+            <SimpleReactLightbox>
+                <div className="content">
+                    { crumbLabel !== "Home" && crumbLabel !== "404" ? <Breadcrumb
+                        crumbs={crumbs}
+                        crumbSeparator=" / "
+                        crumbLabel={crumbLabel}
+                    /> : null }
+                    {children}
+                </div>
+            </SimpleReactLightbox>
             <Footer />
         </>
     )
