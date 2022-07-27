@@ -119,18 +119,36 @@ module.exports = {
         level: 7.5,
     },
   ],
-  experiences: [
+  experiences: [    
     {
         id: 1,
+        period: '2022',
+        company: 'Dell Technologies',
+        link: 'https://www.dell.com/',
+        ocupation: 'Senior Software Engineer',
+        description: '',
+        status: 'present',
+    },
+    {
+        id: 2,
+        period: '2021',
+        company: 'Meta',
+        link: 'https://www.meta.com.br/',
+        ocupation: 'Senior .NET Developer',
+        description: 'Trabalhando como contratado como desenvolvedor .Net para um produto Dell, onde usamos .NET C#, Angular, Jasmine (testes unitários)',
+        status: '',
+    },
+    {
+        id: 3,
         period: 'Atual',
         company: 'Tekann Mobile Solutions - Santa Cruz do Sul / RS',
         link: 'https://tekann.com/pt/',
         ocupation: 'Programador Pleno',
         description: 'Desenvolvimento de websites utilizando HTML5, CSS, Javascript, React, .NET C#, ASP.NET MVC e SQL Server.',
-        status: 'present',
+        status: '',
     },
     {
-        id: 2,
+        id: 4,
         period: '2020',
         company: 'Conectt - Santa Cruz do Sul / RS',
         link: 'https://conectt.com.br/',
@@ -139,7 +157,7 @@ module.exports = {
         status: '',
     },
     {
-        id: 3,
+        id: 5,
         period: '2013',
         company: 'Conectt - Santa Cruz do Sul / RS',
         link: 'https://conectt.com.br/',
@@ -148,14 +166,14 @@ module.exports = {
         status: '',
     },
     {
-        id: 4,
+        id: 6,
         period: '2012',
-        company: 'Conectt - Santa Cruz do Sul / RS',
-        link: 'https://conectt.com.br/',
+        company: 'Conectt (Math Tech)',
+        link: 'https://tech.math.group/',
         ocupation: 'Programador Estagiário',
         description: 'Desenvolvimento de intranets e websites utilizando a plataforma Microsoft Sharepoint utilizando HTML5, CSS e Javascript',
         status: '',
-    },
+    }
   ],
   projects: [
     {
